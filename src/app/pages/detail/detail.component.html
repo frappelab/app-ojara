@@ -1,0 +1,45 @@
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+  <div class="d-flex align-items-center justify-content-between">
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img src="assets/img/logo_ojara.png" alt="" />
+    </a>
+  </div>
+  <!-- End Logo -->
+</header>
+<!-- End Header -->
+
+<main>
+  <div class="container">
+    <section
+      class="section min-vh-100 d-flex flex-row align-items-center justify-content-center"
+    >
+      <model-viewer
+        camera-controls
+        src={{item.glb}}
+        alt="canchi"
+        data-js-focus-visible=""
+        ar-status="not-presenting"
+        style="background-color: #9E9E9E;"
+      >
+      </model-viewer>
+
+      <div style="margin-left: 40px">
+        <div class="card-title">Gancho para ropa {{ item.ropa }}</div>
+        <div class="card-title">REF. {{ item.ref }}</div>
+        <div>
+          {{ item.prendas }}
+        </div>
+        <br />
+        <div>Medias: {{ item.medidas }}</div>
+        <div>Empaque: 750 unidades</div>
+        <div>Colores de línea: {{ item.color }}</div>
+        <br />
+        <div class="col-12">
+          <button class="btn btn-danger w-5" (click)="back()">Volver</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<!-- End #main -->

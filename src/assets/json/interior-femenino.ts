@@ -1,0 +1,32 @@
+export const interiorFemenino = [
+  {
+    line: 'interiorfemenino',
+    ropa: 'Interior femenino',
+    ref: '2C',
+    color: 'Todos',
+    medidas: '27,5 X 9,5 X 0,59 cm',
+    prendas: 'Pantys,Brasier y Prendas Deportivas',
+    img: '',
+    glb: '',
+  },
+  {
+    line: 'interiorfemenino',
+    ropa: 'Interior femenino',
+    ref: '6B',
+    color: 'Todos',
+    medidas: '25,5 X 11,6 X 0,65 cm',
+    prendas: 'Pantys,Brasier y Prendas Deportivas',
+    img: '',
+    glb: '',
+  },
+  {
+    line: 'interiorfemenino',
+    ropa: 'Interior femenino',
+    ref: '7-3',
+    color: 'Todos',
+    medidas: '30,6 X 16,3 X 2,08 cm',
+    prendas: 'Pantys,Brasier y Prendas Deportivas',
+    img: '',
+    glb: '',
+  },
+];

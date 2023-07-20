@@ -1,0 +1,59 @@
+<main id="main" class="main">
+  <div class="pagetitle">
+    <h1>{{ this.line }}</h1>
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item active">{{ this.line }}</li>
+      </ol>
+    </nav>
+  </div>
+  <!-- End Page Title -->
+
+  <section class="section dashboard">
+    <div class="row">
+      <!-- Left side columns -->
+      <div class="col-lg-12">
+        <div class="row">
+          <!-- Sales Card -->
+          <div class="col-xxl-4 col-md-6" *ngFor="let item of itemProducts">
+            <div class="card info-card sales-card" (click)="detail(item)">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <span> REF: {{ item.ref }}</span>
+                </h5>
+
+                <div class="d-flex align-items-center">
+                  <div
+                    class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                  >
+                    <img
+                      class="dash-gancho"
+                      src="https://www.ojara.com/wp-content/uploads/2020/04/Gancho-19B-4.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="ps-3">
+                    <span class="text-muted small pt-2 ps-1"
+                      >Color: {{ item.color }}</span
+                    >
+                    <span class="text-muted small pt-2 ps-1"
+                      >Medidas: {{ item.medidas }}</span
+                    >
+                    <br />
+                    <span class="text-muted small pt-2 ps-1"
+                      >Empaque: 750 unidades</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Sales Card -->
+        </div>
+      </div>
+      <!-- End Left side columns -->
+    </div>
+  </section>
+</main>
+<!-- End #main -->
